@@ -167,6 +167,7 @@ public class Manager {
         try {
             var answer = inputFuture.get(5, TimeUnit.SECONDS);
             if (answer.equals("y")) {
+                activeDialog = false;
                 reportAndExit();
             }
             System.out.println("Keep calculating");
